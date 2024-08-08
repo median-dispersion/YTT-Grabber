@@ -1,0 +1,61 @@
+<!-- https://github.com/median-dispersion/YTT-Grabber -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+
+    <script src="./js/YTTGrabber.js"></script>
+    <script src="./js/SuperSimpleFullScreenDragAndDrop.js"></script>
+    <script src="./js/thumbnail.js"></script>
+    <script src="./main.js"></script>
+
+    <title>YTT Grabber</title>
+
+</head>
+
+<body>
+
+    <div id="main">
+
+        <img id="main-logo" src="./img/logo.svg" alt="YTT Grabber logo">
+        <div id="main-text">YTT Grabber</div>
+
+        <form id="main-input">
+
+            <input id="main-input-textbox" name="input" type="text" placeholder="Enter a video URL" title="Enter a video URL" autocomplete="off" autofocus required>
+            <button id="main-input-search" class="generic-icon-button generic-icon-search" title="Search for a thumbnail" type="submit"></button>
+
+        </form>
+
+        <div id="main-info">or Drag and Drop</div>
+
+    </div>
+
+    <div id="thumbnail" class="fade-thumbnail-in">
+
+        <div id="thumbnail-box">
+
+            <div id="thumbnail-box-header">
+
+                <button id="thumbnail-box-header-copy" class="generic-icon-button generic-icon-copy" title="Copy thumbnail URL to clipboard"></button>
+                <a id="thumbnail-box-header-link" title="Thumbnail URL"></a>
+
+            </div>
+
+            <img id="thumbnail-box-image">
+
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
